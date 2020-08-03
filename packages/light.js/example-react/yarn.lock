@@ -954,19 +954,36 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
-"@parity/abi@^5.1.11":
-  version "5.1.11"
-  resolved "https://registry.yarnpkg.com/@parity/abi/-/abi-5.1.11.tgz#3f4ad3ad1c5dc9a0038df1c2d2dd5447ae440bd1"
-  integrity sha512-PhYiH1TmwsjNLUC+dWAZ4MC5GW2VFGc+rbO6Q7JEg7fTXRA+08S+cpUFbfzD1cDEnLl25nGKLZ9gHoTtc2QPiw==
+"@parity/abi@^5.1.14", "@parity/abi@^5.1.19":
+  version "5.1.19"
+  resolved "https://registry.yarnpkg.com/@parity/abi/-/abi-5.1.19.tgz#7d3b5f994e0a8f4f32a81e11cbf4aa71075aa6b1"
+  integrity sha512-V6BSPFKmD2RY7iFWpi6YDTAzDz7Kyc0MuUYmlUjukldLNPCB2cvOZvoBP6ETck6nGNa1nMU6HWd0PFmuvi70HQ==
   dependencies:
     bignumber.js "^8.0.1"
     js-sha3 "0.8.0"
     utf8 "^3.0.0"
 
-"@parity/api@../../api", "@parity/api@^5.1.11":
-  version "5.1.11"
+"@parity/api@../../api":
+  version "5.1.14"
   dependencies:
-    "@parity/abi" "^5.1.11"
+    "@parity/abi" "^5.1.14"
+    bignumber.js "^8.0.1"
+    blockies "0.0.2"
+    es6-error "4.0.2"
+    es6-promise "^4.1.1"
+    eventemitter3 "^3.1.0"
+    isomorphic-fetch "^2.2.1"
+    js-sha3 "0.8.0"
+    lodash "^4.17.11"
+    store "^2.0.12"
+    websocket "^1.0.25"
+
+"@parity/api@^5.1.14":
+  version "5.1.19"
+  resolved "https://registry.yarnpkg.com/@parity/api/-/api-5.1.19.tgz#045f5ed1fbba366ddc111cd73362bb1f27f0ca98"
+  integrity sha512-vuuv1hoH2NPqay6c8XqYtxrc0JZcoRBMNhOubU9Y1MIJk50Du4KkRcvwkPX4CmRUotHQRYz+3zaQfddyc3ap9Q==
+  dependencies:
+    "@parity/abi" "^5.1.19"
     bignumber.js "^8.0.1"
     blockies "0.0.2"
     es6-error "4.0.2"
@@ -979,16 +996,16 @@
     websocket "^1.0.25"
 
 "@parity/light.js-react@../../light.js-react":
-  version "5.1.11"
+  version "5.1.14"
   dependencies:
     recompose "^0.30.0"
     symbol-observable "^1.2.0"
 
 "@parity/light.js@../":
-  version "5.1.11"
+  version "5.1.14"
   dependencies:
-    "@parity/abi" "^5.1.11"
-    "@parity/api" "^5.1.11"
+    "@parity/abi" "^5.1.14"
+    "@parity/api" "^5.1.14"
     async-retry "^1.2.3"
     bignumber.js "^8.0.1"
     debug "^4.1.0"
@@ -2017,9 +2034,9 @@ bluebird@^3.5.1, bluebird@^3.5.5:
   integrity sha512-5am6HnnfN+urzt4yfg7IgTbotDjIT/u8AJpEt0sIU9FtXfVeezXAPKswrG+xKUCOYAINpSdgZVDU6QFh+cuH3w==
 
 bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.1.1, bn.js@^4.4.0:
-  version "4.11.8"
-  resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.11.8.tgz#2cde09eb5ee341f484746bb0309b3253b1b1442f"
-  integrity sha512-ItfYfPLkWHUjckQCk8xC+LwxgK8NYcXywGigJgSwOP8Y2iyWT4f2vsZnoOXTTbo+o5yXmIUJ4gn5538SO5S3gA==
+  version "4.11.9"
+  resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.11.9.tgz#26d556829458f9d1e81fc48952493d0ba3507828"
+  integrity sha512-E6QoYqCKZfgatHTdHzs1RRKP7ip4vvm+EyRUeE2RF0NblwVvb0p6jSVeNTOFxPn26QXN2o6SMfNxKp6kU8zQaw==
 
 body-parser@1.19.0:
   version "1.19.0"
@@ -3504,9 +3521,9 @@ electron-to-chromium@^1.3.103, electron-to-chromium@^1.3.247:
   integrity sha512-2OAU91iUw83QvzuWJPfT+FMj+O+DC1EyTx1QBFcc9WZzOQSfZEAWINpdLWElxkgfiqTvQRDOKg0DkMZd9QoNug==
 
 elliptic@^6.0.0:
-  version "6.5.0"
-  resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.5.0.tgz#2b8ed4c891b7de3200e14412a5b8248c7af505ca"
-  integrity sha512-eFOJTMyCYb7xtE/caJ6JJu+bhi67WCYNbkGSknu20pmM8Ke/bqOfdnZWxyoGN26JgfxTbXrsCkEw4KheCT/KGg==
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.5.3.tgz#cb59eb2efdaf73a0bd78ccd7015a62ad6e0f93d6"
+  integrity sha512-IMqzv5wNQf+E6aHeIqATs0tOLeOTwj1QKbRcS3jBbYkl5oLAserA8yJTT7/VyHUYG91PRmPyeQDObKLPpeS4dw==
   dependencies:
     bn.js "^4.4.0"
     brorand "^1.0.1"
